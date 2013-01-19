@@ -1,0 +1,33 @@
+<html>
+<head>
+<style>
+body {
+	width: 374px;
+}
+.word {
+	border: 1px solid #e5f;
+	margin: 10px;
+	padding: 10px;
+}
+
+</style>
+</head>
+
+<body>
+	<div>
+		<p><a href="/new">new</a></p>
+	</div>
+	
+	<% for word in @words %>
+		<div class="word">
+
+	<h3><%= word.word %></h3>
+	<p><%= word.definition %></p>
+	<p><em><a href="/edit/<%= word.id %>">edit</a></em></p>
+	<p><form method="post" action="/delete/<%= word.id %>"><input type="submit" value="destroy"></form></p>
+	</div>
+
+	<% end %>
+</body>
+
+</html>

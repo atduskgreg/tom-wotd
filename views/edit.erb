@@ -1,0 +1,44 @@
+<html>
+<head>
+	<style>
+#word {
+	width:250px;
+}
+
+label {
+	padding-right:15px;
+}
+
+#definition {
+	width: 400px;
+	height: 100px;
+}
+
+</style>
+</head>
+
+<body>
+	<div>
+		<p><a href="/all">all</a> | <a href="/new">new</a></p>
+	</div>
+
+<h2>Edit your word</h2>
+
+<form id="edit_word" method="post" action="/update/<%= @word.id %>">
+<p>
+	<label>Word</label>
+	<input  id="word" name="word" value="<%= @word.word %>" />
+</p>
+<p>
+	<label>Definition</label><br />
+	<textarea id="definition" name="definition"><%= @word.definition %></textarea>
+</p>
+<p>
+	<input type="submit" value="Update" />
+</p>
+
+</form>
+
+</body>
+
+</html>

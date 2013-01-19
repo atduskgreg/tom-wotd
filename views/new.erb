@@ -1,0 +1,44 @@
+<html>
+<head>
+	<style>
+#word {
+	width:250px;
+}
+
+label {
+	padding-right:15px;
+}
+
+#definition {
+	width: 400px;
+	height: 100px;
+}
+
+</style>
+</head>
+
+<body>
+	<div>
+		<p><a href="/all">all</a></p>
+	</div>
+
+<h2>Add a Word!</h2>
+
+<form id="new_word" method="post" action="/create">
+<p>
+	<label>Word</label>
+	<input  id="word" name="word" type="" />
+</p>
+<p>
+	<label>Definition</label><br />
+	<textarea id="definition" name="definition"></textarea>
+</p>
+<p>
+	<input type="submit" value="Create" />
+</p>
+
+</form>
+
+</body>
+
+</html>
