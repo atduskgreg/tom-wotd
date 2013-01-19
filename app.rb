@@ -31,13 +31,13 @@ get '/edition/' do
 	end
 
 	@word = Word.first :delivery_order => delivery
-	etag @piece.delivery_order
+	etag @word.delivery_order
 	erb :edition
 end
 
 get '/sample/' do
 	@word = Word.first :delivery_order => 1
-	etag "sample"+@piece.delivery_order
+	etag "sample"+@word.delivery_order
 	erb :edition
 end
 
