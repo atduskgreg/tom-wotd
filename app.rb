@@ -37,7 +37,7 @@ end
 
 get '/sample/' do
 	@word = Word.first :delivery_order => 1
-	etag "sample"+@word.delivery_order
+	etag "sample#{@word.delivery_order}"
 	erb :edition
 end
 
