@@ -23,6 +23,7 @@ body {
 
 	<h3><%= word.word %></h3>
 	<p><%= word.definition %></p>
+	<p><a href="/edition/?delivery_count=<%= word.delivery_order %>">view as edition</a></p>
 	<p><em><a href="/edit/<%= word.id %>">edit</a></em></p>
 	<p><form method="post" action="/delete/<%= word.id %>"><input type="submit" value="destroy"></form></p>
 	</div>

@@ -18,6 +18,12 @@ class Word
 
   property :delivery_order, Integer
 
+  before :create, :add_delivery_order
+
+  def add_delivery_order
+    self.delivery_order = Word.count + 1
+  end
+
 end
 
 class User
