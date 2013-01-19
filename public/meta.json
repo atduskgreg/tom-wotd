@@ -1,8 +1,8 @@
 {
-  "owner_email":"greg.borenstein@gmail.com",
+  "owner_email":"tom@productclubsf.com",
   "publication_api_version":"1.0",
-  "name": "ReCode Printer",
-  "description": "ReCoded computer art classics.",
+  "name": "Better Word of the Day",
+  "description": "Better word of the day.",
   "delivered_on":"wednesdays",
   "external_configuration": false,
   "send_timezone_info": false,
