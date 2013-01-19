@@ -7,7 +7,7 @@ require 'dm-types'
 require 'open-uri'
 require 'date'
 
-DataMapper.setup(:default, ENV['HEROKU_POSTGRESQL_GREEN'] || 'postgres://localhost/tom_wotd')
+DataMapper.setup(:default, ENV['HEROKU_POSTGRESQL_ROSE_URL'] || 'postgres://localhost/tom_wotd')
 
 class Word
   include DataMapper::Resource
